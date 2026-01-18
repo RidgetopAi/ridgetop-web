@@ -476,6 +476,13 @@ img {
     color: var(--accent);
 }
 
+.footer-copyright {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    text-align: center;
+    margin-top: var(--spacing-xs);
+}
+
 /* Fade-in Animation */
 .fade-in {
     opacity: 0;
@@ -556,6 +563,31 @@ img {
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/* Reduced Motion - Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .project-card {
+        transition: none;
+    }
+
+    .scroll-hint {
+        animation: none;
+    }
+
+    .nav a, a, .project-link {
+        transition: none;
     }
 }
 

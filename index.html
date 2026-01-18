@@ -22,10 +22,32 @@
     <meta name="twitter:description" content="Building the infrastructure layer for AI-native development.">
 
     <link rel="icon" type="image/jpeg" href="assets/ridgetopai-logo.JPG">
+    <link rel="apple-touch-icon" href="assets/ridgetopai-logo.JPG">
+
+    <!-- Font preloading for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"></noscript>
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Brian",
+        "url": "https://ridgetopai.net",
+        "sameAs": ["https://github.com/RidgetopAi"],
+        "jobTitle": "Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "RidgetopAI"
+        },
+        "knowsAbout": ["AI Development", "MCP Tools", "Memory Systems", "TypeScript", "Rust"]
+    }
+    </script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -34,7 +56,7 @@
             <img src="assets/ridgetopai-logo.JPG" alt="RidgetopAI" width="40" height="40">
             <span class="logo-text">RidgetopAI</span>
         </a>
-        <nav class="nav">
+        <nav class="nav" aria-label="Main navigation">
             <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener">GitHub</a>
             <a href="mailto:brian@ridgetopai.net">Contact</a>
         </nav>
@@ -283,10 +305,11 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="footer-content">
             <p class="footer-name">Brian @ RidgetopAI</p>
-            <nav class="footer-nav">
+            <p class="footer-copyright">&copy; 2026 RidgetopAI. Building with AI, not just for AI.</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
                 <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener">GitHub</a>
                 <a href="mailto:brian@ridgetopai.net">Email</a>
             </nav>
