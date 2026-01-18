@@ -1,0 +1,5 @@
+# robots.txt for ridgetopai.net
+User-agent: *
+Allow: /
+
+Sitemap: https://ridgetopai.net/sitemap.xml
