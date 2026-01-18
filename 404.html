@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | RidgetopAI</title>
+    <link rel="icon" type="image/jpeg" href="/assets/ridgetopai-logo.JPG">
+    <style>
+        :root {
+            --bg: #0D1117;
+            --text: #E6EDF3;
+            --text-muted: #8B949E;
+            --accent: #58A6FF;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: clamp(3rem, 10vw, 6rem);
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+        a:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+    </style>
+</head>
+<body>
+    <h1>404</h1>
+    <p>Page not found. The page you're looking for doesn't exist.</p>
+    <a href="/">Return Home</a>
+</body>
+</html>
