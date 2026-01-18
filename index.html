@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RidgetopAI — AI-Native Development Infrastructure</title>
+    <meta name="description" content="Building the infrastructure layer for AI-native development. Memory systems, architecture visualization, and orchestration tools for humans working with AI.">
+    <meta name="author" content="Brian @ RidgetopAI">
+    <link rel="icon" type="image/jpeg" href="assets/ridgetopai-logo.JPG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="assets/ridgetopai-logo.JPG" alt="RidgetopAI" width="40" height="40">
+            <span class="logo-text">RidgetopAI</span>
+        </a>
+        <nav class="nav">
+            <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:brian@ridgetopai.net">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Building the infrastructure layer for<br><span class="accent">AI-native development.</span></h1>
+            <p class="hero-sub">Memory systems, architecture visualization, and orchestration tools for humans working with AI.</p>
+            <div class="scroll-hint">
+                <span>Explore the stack</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="diagram-section">
+            <h2 class="section-title">The Infrastructure Stack</h2>
+            <div class="diagram-container">
+                <svg viewBox="0 0 800 480" class="infrastructure-diagram" aria-label="Infrastructure diagram showing how the projects connect">
+                    <!-- Foundation Layer -->
+                    <g class="layer foundation-layer">
+                        <rect x="40" y="20" width="720" height="100" rx="8" class="layer-bg"/>
+                        <text x="60" y="50" class="layer-label">FOUNDATION</text>
+
+                        <g class="node mandrel-node" transform="translate(120, 55)">
+                            <rect width="160" height="55" rx="6" class="node-bg"/>
+                            <text x="80" y="22" class="node-title">Mandrel</text>
+                            <text x="80" y="42" class="node-subtitle">Context Memory</text>
+                        </g>
+
+                        <g class="node squire-node" transform="translate(520, 55)">
+                            <rect width="160" height="55" rx="6" class="node-bg"/>
+                            <text x="80" y="22" class="node-title">Squire</text>
+                            <text x="80" y="42" class="node-subtitle">Personal Memory</text>
+                        </g>
+
+                        <!-- Connection line between Mandrel and Squire -->
+                        <line x1="280" y1="82" x2="520" y2="82" class="connection-line"/>
+                    </g>
+
+                    <!-- Understanding Layer -->
+                    <g class="layer understanding-layer">
+                        <rect x="40" y="140" width="720" height="100" rx="8" class="layer-bg"/>
+                        <text x="60" y="170" class="layer-label">UNDERSTANDING</text>
+
+                        <g class="node surveyor-node" transform="translate(320, 175)">
+                            <rect width="160" height="55" rx="6" class="node-bg"/>
+                            <text x="80" y="22" class="node-title">Surveyor</text>
+                            <text x="80" y="42" class="node-subtitle">Architecture Vision</text>
+                        </g>
+                    </g>
+
+                    <!-- Connection from Foundation to Understanding -->
+                    <path d="M200 110 L200 130 L400 130 L400 175" class="connection-line flow-line" fill="none"/>
+                    <path d="M600 110 L600 130 L400 130 L400 175" class="connection-line flow-line" fill="none"/>
+
+                    <!-- Orchestration Layer -->
+                    <g class="layer orchestration-layer">
+                        <rect x="40" y="260" width="720" height="100" rx="8" class="layer-bg"/>
+                        <text x="60" y="290" class="layer-label">ORCHESTRATION</text>
+
+                        <g class="node ridge-node" transform="translate(320, 295)">
+                            <rect width="160" height="55" rx="6" class="node-bg"/>
+                            <text x="80" y="22" class="node-title">Ridge-Control</text>
+                            <text x="80" y="42" class="node-subtitle">TUI Command Center</text>
+                        </g>
+                    </g>
+
+                    <!-- Connection from Understanding to Orchestration -->
+                    <path d="M400 230 L400 295" class="connection-line flow-line" fill="none"/>
+
+                    <!-- Value Layer -->
+                    <g class="layer value-layer">
+                        <rect x="40" y="380" width="720" height="90" rx="8" class="layer-bg"/>
+                        <text x="60" y="410" class="layer-label">VALUE</text>
+
+                        <g class="node wilf-node" transform="translate(320, 405)">
+                            <rect width="160" height="55" rx="6" class="node-bg"/>
+                            <text x="80" y="22" class="node-title">Wilf-Command</text>
+                            <text x="80" y="42" class="node-subtitle">Real Users</text>
+                        </g>
+                    </g>
+
+                    <!-- Connection from Orchestration to Value -->
+                    <path d="M400 350 L400 405" class="connection-line flow-line" fill="none"/>
+
+                    <!-- Flow arrows -->
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="var(--accent)"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Mobile simplified version -->
+            <div class="diagram-mobile">
+                <div class="mobile-layer">
+                    <span class="mobile-label">Foundation</span>
+                    <div class="mobile-nodes">
+                        <span class="mobile-node">Mandrel</span>
+                        <span class="mobile-node">Squire</span>
+                    </div>
+                </div>
+                <div class="mobile-arrow">↓</div>
+                <div class="mobile-layer">
+                    <span class="mobile-label">Understanding</span>
+                    <div class="mobile-nodes">
+                        <span class="mobile-node">Surveyor</span>
+                    </div>
+                </div>
+                <div class="mobile-arrow">↓</div>
+                <div class="mobile-layer">
+                    <span class="mobile-label">Orchestration</span>
+                    <div class="mobile-nodes">
+                        <span class="mobile-node">Ridge-Control</span>
+                    </div>
+                </div>
+                <div class="mobile-arrow">↓</div>
+                <div class="mobile-layer">
+                    <span class="mobile-label">Value</span>
+                    <div class="mobile-nodes">
+                        <span class="mobile-node">Wilf-Command</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- Mandrel -->
+            <article class="project-card fade-in">
+                <div class="project-header">
+                    <h3 class="project-name">Mandrel</h3>
+                    <span class="project-layer">Foundation</span>
+                </div>
+                <p class="project-tagline">Persistent memory infrastructure for AI-assisted development</p>
+                <p class="project-description">AI agents forget everything between sessions. Mandrel gives them a semantic, searchable knowledge base that survives across conversations.</p>
+                <div class="project-stats">
+                    <span class="stat"><span class="stat-value">27</span> MCP tools</span>
+                    <span class="stat"><span class="stat-value">25k</span> lines TypeScript</span>
+                    <span class="stat"><span class="stat-value">Zero</span> API costs</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">pgvector</span>
+                    <span class="tech-badge">Transformers.js</span>
+                </div>
+                <p class="project-highlight">Local embeddings via Transformers.js — no data leaves your machine, works offline</p>
+                <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </article>
+
+            <!-- Squire -->
+            <article class="project-card fade-in">
+                <div class="project-header">
+                    <h3 class="project-name">Squire</h3>
+                    <span class="project-layer">Foundation</span>
+                </div>
+                <p class="project-tagline">AI memory that knows the user</p>
+                <p class="project-description">Current AI assistants are amnesiacs. Squire gives AI genuine memory — not retrieval, but understanding of patterns, priorities, relationships, and goals.</p>
+                <div class="project-stats">
+                    <span class="stat"><span class="stat-value">36k</span> lines TypeScript</span>
+                    <span class="stat"><span class="stat-value">32</span> DB migrations</span>
+                    <span class="stat"><span class="stat-value">3D</span> Memory Village</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">Next.js</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">Three.js</span>
+                </div>
+                <p class="project-highlight">Story Engine — "Generate Not Retrieve" — synthesizes narratives from memory graphs</p>
+                <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </article>
+
+            <!-- Surveyor -->
+            <article class="project-card fade-in">
+                <div class="project-header">
+                    <h3 class="project-name">Surveyor</h3>
+                    <span class="project-layer">Understanding</span>
+                </div>
+                <p class="project-tagline">See your codebase, understand your architecture</p>
+                <p class="project-description">AI-generated code becomes incomprehensible fast. Surveyor visualizes three layers: structural (imports/exports), behavioral (what functions do), and intent (emergent patterns).</p>
+                <div class="project-stats">
+                    <span class="stat"><span class="stat-value">Multi</span>-language</span>
+                    <span class="stat"><span class="stat-value">LLM</span>-powered analysis</span>
+                    <span class="stat"><span class="stat-value">React</span> Flow viz</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">ts-morph</span>
+                    <span class="tech-badge">React Flow</span>
+                    <span class="tech-badge">pnpm monorepo</span>
+                </div>
+                <p class="project-highlight">Three-layer mapping — structure, behavior, intent — makes invisible architecture visible</p>
+                <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </article>
+
+            <!-- Ridge-Control -->
+            <article class="project-card fade-in">
+                <div class="project-header">
+                    <h3 class="project-name">Ridge-Control</h3>
+                    <span class="project-layer">Orchestration</span>
+                </div>
+                <p class="project-tagline">Terminal command center for AI-native development</p>
+                <p class="project-description">Development workflows are fragmented. Ridge-Control unifies terminal emulation, AI interaction, process monitoring, and orchestration in one TUI.</p>
+                <div class="project-stats">
+                    <span class="stat"><span class="stat-value">Full</span> PTY emulator</span>
+                    <span class="stat"><span class="stat-value">Claude</span> API client</span>
+                    <span class="stat"><span class="stat-value">Multi</span>-tab + splits</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Rust</span>
+                    <span class="tech-badge">Ratatui</span>
+                </div>
+                <p class="project-highlight">Built collaboratively by sequential AI instances, each contributing incrementally with handoffs via Mandrel</p>
+                <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </article>
+
+            <!-- Wilf-Command -->
+            <article class="project-card fade-in">
+                <div class="project-header">
+                    <h3 class="project-name">Wilf-Command</h3>
+                    <span class="project-layer">Value</span>
+                </div>
+                <p class="project-tagline">Sales territory command center — real users, real value</p>
+                <p class="project-description">Sales reps manage territories with scattered spreadsheets. Wilf-Command centralizes dealers, product mix, travel planning, and visit tracking in one dashboard.</p>
+                <div class="project-stats">
+                    <span class="stat"><span class="stat-value">12k</span> lines TypeScript</span>
+                    <span class="stat"><span class="stat-value">10+</span> tables with RLS</span>
+                    <span class="stat"><span class="stat-value">6</span> feature modules</span>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">Next.js</span>
+                    <span class="tech-badge">Supabase</span>
+                    <span class="tech-badge">Tailwind CSS</span>
+                    <span class="tech-badge">React Query</span>
+                </div>
+                <p class="project-highlight">Proof that AI-assisted development delivers real business value — production tool with actual users</p>
+                <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-name">Brian @ RidgetopAI</p>
+            <nav class="footer-nav">
+                <a href="https://github.com/RidgetopAi" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:brian@ridgetopai.net">Email</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
